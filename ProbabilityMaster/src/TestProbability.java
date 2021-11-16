@@ -1,0 +1,59 @@
+import java.util.Random;
+
+public class TestProbability {
+
+    public int min;
+    public int max;
+    public int[] probabilities;//decided by an integer Weight
+
+    public TestProbability(int mn, int mx, int[] probs)
+    {
+        min = mn;
+        max = mx;
+        probabilities = probs;
+    }
+
+    //return returnedCount values
+    public void PrintValues(int returnedCount)
+    {
+        System.out.println("Random numbers with different weights: ");
+        int finalNumber = 0;
+        int[] count = new int[returnedCount];
+        int j = 0;
+        do
+        {
+            Random r = new Random();
+            int sum = 0;
+            int[] sums = new int[probabilities.length];
+            for (int k = 0; k < probabilities.length; k++)
+            {
+                sums[k] = 0;
+            }
+            for (int k = 0; k < probabilities.length; k++)
+            {
+                sum = sum + probabilities[k];
+                sums[k] = sums[k] + sum;
+            }
+            int rand = r.nextInt(sum);
+            //System.out.println("Rand " + rand);
+            finalNumber = rand + min;
+            int countT = 0;
+            for (int i = min; i < max + 1; i++)
+            {
+                countT = countT + probabilities[i - 1];
+                if (finalNumber <= countT)
+                {
+                    count[j] = i;
+                    break;
+                }
+            }
+
+            System.out.println(count[j] + " ");
+            j = j + 1;
+
+        }while (j < returnedCount);
+
+    }
+
+
+}
