@@ -20,12 +20,20 @@ public class Main {
         //Numbers closer to 1000 have greater weight
         TestProbability tpFour = new TestProbability(1, 1000, prFour);
         tp.PrintValues(3);
+        tp.PrintWeight();
         System.out.println();
         tpTwo.PrintValues(3);
+        tpTwo.PrintWeight();
         System.out.println();
         tpThree.PrintValues(4);
+        tpThree.PrintWeight();
         System.out.println();
         tpFour.PrintValues(5);
+        tpFour.PrintWeight();
+        System.out.println();
+        tpFour.PrintValues(20);
+        tpFour.PrintValues(20);
+
 
 
     }
