@@ -15,3 +15,6 @@ Map a decision to a number with certain decisions having greater weight than oth
 Gamify distributions with some numbers or values(in a key/value pair) being more rare.
 
 Map objects to numbers.
+
+## Machine Learning ##
+Random and automated distributions based on designed weights.
