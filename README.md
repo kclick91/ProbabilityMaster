@@ -18,3 +18,5 @@ Map objects to numbers.
 
 ## Machine Learning ##
 Random and automated distributions based on designed weights.
+
+Used for predictable weights/probabilities but unpredictable specific examples.
