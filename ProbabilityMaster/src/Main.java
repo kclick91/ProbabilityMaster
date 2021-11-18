@@ -1,5 +1,8 @@
 import org.bouncycastle.util.test.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main {
 
     public static void main(String[] args)
@@ -50,7 +53,12 @@ public class Main {
         tpFour.PrintValues(20);
         tpFive.PrintWeight();
         tpFive.PrintValues(10);
-
+        HashMap<Integer, String> mapIS = new HashMap<Integer, String>();
+        mapIS.put(1, "First");
+        mapIS.put(2, "Second");
+        mapIS.put(3, "Thirds");
+        TestProbability tpSix = new TestProbability(1,3,prTwo, mapIS);
+        tpSix.PrintValues(3);
 
 
     }

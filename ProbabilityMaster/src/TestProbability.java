@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Random;
 
 public class TestProbability {
@@ -5,12 +6,22 @@ public class TestProbability {
     public int min;
     public int max;
     public int[] probabilities;//decided by an integer Weight
+    public HashMap<Integer, String> mapValues = new HashMap<>();//the values
 
     public TestProbability(int mn, int mx, int[] probs)
     {
         min = mn;
         max = mx;
         probabilities = probs;
+    }
+
+    public TestProbability(int mn, int mx, int[] probs, HashMap<Integer, String> hm)
+    {
+        min = mn;
+        max = mx;
+        probabilities = probs;
+        mapValues = hm;
+
     }
 
     public void PrintWeight()
@@ -57,6 +68,7 @@ public class TestProbability {
             }
 
             System.out.println(count[j] + " ");
+            System.out.println(mapValues.get(count[j]));
             j = j + 1;
 
         }while (j < returnedCount);
