@@ -68,7 +68,11 @@ public class TestProbability {
             }
 
             System.out.println(count[j] + " ");
-            System.out.println(mapValues.get(count[j]));
+            if (mapValues.get(count[j]) != null)
+            {
+                System.out.println(mapValues.get(count[j]));
+            }
+
             j = j + 1;
 
         }while (j < returnedCount);
