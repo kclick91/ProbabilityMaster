@@ -56,9 +56,25 @@ public class Main {
         HashMap<Integer, String> mapIS = new HashMap<Integer, String>();
         mapIS.put(1, "First");
         mapIS.put(2, "Second");
-        mapIS.put(3, "Thirds");
+        mapIS.put(3, "Third");
         TestProbability tpSix = new TestProbability(1,3,prTwo, mapIS);
         tpSix.PrintValues(3);
+        //Sample game with two players and each with a randomized hand of 10 and a max of attack capability 5
+        HashMap<Integer, String> gameMap = new HashMap<Integer, String>();
+        gameMap.put(1, "Capability One");
+        gameMap.put(2, "Capability Two");
+        gameMap.put(3, "Capability Three");
+        gameMap.put(4, "Capability Four");
+        gameMap.put(5, "Capability Five");
+        int[] attackWeights = new int[]{16,8,4,2,1};
+        TestProbability playerOne = new TestProbability(1, 5, attackWeights, gameMap);
+        TestProbability playerTwo = new TestProbability(1, 5, attackWeights, gameMap);
+        System.out.println();
+        System.out.println("Sample game with two players and each with a randomized hand of 10 and a max of attack capability 5: ");
+        System.out.println("First Player Hand");
+        playerOne.PrintValues(10);
+        System.out.println("Second Player Hand");
+        playerTwo.PrintValues(10);
 
 
     }
