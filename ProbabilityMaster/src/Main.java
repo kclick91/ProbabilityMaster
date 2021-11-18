@@ -76,6 +76,17 @@ public class Main {
         System.out.println("Second Player Hand");
         playerTwo.PrintValues(10);
 
+        int[] weightForTPML = new int[]{3,2,4,4,4,9,7,8,2,7};
+        // 2 examples of the
+        //object tpML with 3 inputs
+        //ranging from 1 to 10
+        TestProbability tpML = new TestProbability(1, 10, weightForTPML);
+        System.out.println("2 Examples of Object 1");
+        tpML.PrintValues(3);
+        tpML.PrintValues(3);
+        System.out.println("FINISHED with 2 examples listed.");
+
+
 
     }
 
