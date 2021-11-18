@@ -1,5 +1,5 @@
 # ProbabilityMaster
-Random Number Generator with Weights
+Random Number Generator with Weights/Non-Uniform Random Number Generator
 
 Choose the minimum,maximum, and weights of the numbers from the minimum through the maximum.
 Also, choose how many numbers are printed out to test random distributions.
