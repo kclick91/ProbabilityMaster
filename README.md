@@ -20,3 +20,5 @@ Map objects to numbers.
 Random and automated distributions based on designed weights.
 
 Used for predictable weights/probabilities but unpredictable specific examples.
+
+One distribution run is for one generated example.
