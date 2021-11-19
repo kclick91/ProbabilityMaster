@@ -85,6 +85,17 @@ public class Main {
         tpML.PrintValues(3);
         tpML.PrintValues(3);
         System.out.println("FINISHED with 2 examples listed.");
+        //Atmosphere Composition of Earth//
+        int[] atmosphereWeights = new int[]{7808, 2095, 93, 4};
+
+        HashMap<Integer, String> mapAtmosphere = new HashMap<Integer, String>();
+        mapAtmosphere.put(1, "Nitrogen");
+        mapAtmosphere.put(2, "Oxygen");
+        mapAtmosphere.put(3, "Argon");
+        mapAtmosphere.put(4, "Carbon Dioxide");
+        TestProbability tpAtmosphere = new TestProbability(1, 4, atmosphereWeights,mapAtmosphere);
+        tpAtmosphere.PrintValues(20);
+
 
 
 
