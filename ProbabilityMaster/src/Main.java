@@ -2,6 +2,7 @@ import org.bouncycastle.util.test.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class Main {
 
@@ -117,6 +118,16 @@ public class Main {
         System.out.println("Random pieces to be placed on chess board.");
         tpChess.PrintValues(15);
 
+
+        HashMap<Integer, Object> random = new HashMap<Integer, Object>();
+        SampleObject so = new SampleObject(1, "Object One");
+        SampleObject st = new SampleObject(2, "Object Two");
+        random.put(1, so.Print());//Object should replace String
+        random.put(2, st.Print());//Object should replace String
+        int[] weights = new int[]{4,1};
+
+        TestProbability tpFlip = new TestProbability(1,2, weights, random);
+        tpFlip.PrintValues(20);
 
 
 
