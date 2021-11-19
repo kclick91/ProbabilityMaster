@@ -3,10 +3,10 @@ import java.util.Random;
 
 public class TestProbability {
 
-    public int min;
-    public int max;
-    public int[] probabilities;//decided by an integer Weight
-    public HashMap<Integer, String> mapValues = new HashMap<>();//the values
+    private int min;
+    private int max;
+    private int[] probabilities;//decided by an integer Weight
+    private HashMap<Integer, String> mapValues = new HashMap<>();//the values
 
     public TestProbability(int mn, int mx, int[] probs)
     {
