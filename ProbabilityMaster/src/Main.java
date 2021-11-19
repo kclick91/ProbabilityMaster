@@ -105,6 +105,18 @@ public class Main {
         tpAtmosphere.PrintValues(20);
         tpAtmosphere.PrintWeight();
 
+        //Random Initial Chess Pieces with a required additional King at the same spot
+        int[] randomWeights = new int[]{8,2,2,2,1};
+        HashMap<Integer, String> chessPieces = new HashMap<Integer, String>();
+        chessPieces.put(1, "Pawn");
+        chessPieces.put(2, "Rook");
+        chessPieces.put(3, "Knight");
+        chessPieces.put(4, "Bishop");
+        chessPieces.put(5, "Queen");
+        TestProbability tpChess = new TestProbability(1,5, randomWeights, chessPieces);
+        System.out.println("Random pieces to be placed on chess board.");
+        tpChess.PrintValues(15);
+
 
 
 
