@@ -6,7 +6,8 @@ public class TestProbability {
     private int min;
     private int max;
     private int[] probabilities;//decided by an integer Weight
-    private HashMap<Integer, String> mapValues = new HashMap<>();//the values
+    private HashMap<Integer, Object> mapValues = new HashMap<>();//the values
+    //private HashMap<Integer, Object> objects = new HashMap<>();//Objects
 
     public TestProbability(int mn, int mx, int[] probs)
     {
@@ -15,7 +16,7 @@ public class TestProbability {
         probabilities = probs;
     }
 
-    public TestProbability(int mn, int mx, int[] probs, HashMap<Integer, String> hm)
+    public TestProbability(int mn, int mx, int[] probs, HashMap<Integer, Object> hm)
     {
         min = mn;
         max = mx;
@@ -23,7 +24,6 @@ public class TestProbability {
         mapValues = hm;
 
     }
-
     public void PrintWeight()
     {
         for (int i = 0; i < probabilities.length;i++)

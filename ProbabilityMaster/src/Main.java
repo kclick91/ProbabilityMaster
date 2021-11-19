@@ -53,14 +53,14 @@ public class Main {
         tpFour.PrintValues(20);
         tpFive.PrintWeight();
         tpFive.PrintValues(10);
-        HashMap<Integer, String> mapIS = new HashMap<Integer, String>();
+        HashMap<Integer, Object> mapIS = new HashMap<Integer, Object>();
         mapIS.put(1, "First");
         mapIS.put(2, "Second");
         mapIS.put(3, "Third");
         TestProbability tpSix = new TestProbability(1,3,prTwo, mapIS);
         tpSix.PrintValues(3);
         //Sample game with two players and each with a randomized hand of 10 and a max of attack capability 5
-        HashMap<Integer, String> gameMap = new HashMap<Integer, String>();
+        HashMap<Integer, Object> gameMap = new HashMap<Integer, Object>();
         gameMap.put(1, "Capability One");
         gameMap.put(2, "Capability Two");
         gameMap.put(3, "Capability Three");
@@ -91,7 +91,7 @@ public class Main {
         int[] atmosphereWeights = new int[]{7808, 2095, 93, 4};
 
         System.out.println("Samples from Earth's atmosphere by mole fraction: ");
-        HashMap<Integer, String> mapAtmosphere = new HashMap<Integer, String>();
+        HashMap<Integer, Object> mapAtmosphere = new HashMap<Integer, Object>();
         mapAtmosphere.put(1, "Nitrogen");
         mapAtmosphere.put(2, "Oxygen");
         mapAtmosphere.put(3, "Argon");
@@ -107,7 +107,7 @@ public class Main {
 
         //Random Initial Chess Pieces with a required additional King at the same spot
         int[] randomWeights = new int[]{8,2,2,2,1};
-        HashMap<Integer, String> chessPieces = new HashMap<Integer, String>();
+        HashMap<Integer, Object> chessPieces = new HashMap<Integer, Object>();
         chessPieces.put(1, "Pawn");
         chessPieces.put(2, "Rook");
         chessPieces.put(3, "Knight");
