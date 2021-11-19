@@ -95,7 +95,7 @@ public class Main {
         mapAtmosphere.put(4, "Carbon Dioxide");
         TestProbability tpAtmosphere = new TestProbability(1, 4, atmosphereWeights,mapAtmosphere);
         tpAtmosphere.PrintValues(20);
-
+        tpAtmosphere.PrintWeight();
 
 
 

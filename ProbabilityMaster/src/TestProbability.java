@@ -28,7 +28,7 @@ public class TestProbability {
     {
         for (int i = 0; i < probabilities.length;i++)
         {
-            System.out.println("Weight: " + probabilities[i] + " for number " + (i + 1));
+            System.out.println("Weight: " + probabilities[i] + " for number " + (i + 1) + " or " + mapValues.get(i + 1));
         }
     }
 
