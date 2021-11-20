@@ -129,7 +129,7 @@ public class Main {
         tpAtmosphere.PrintValues(20);
         tpAtmosphere.PrintWeight();
 
-        //Random Initial Chess Pieces with a required additional King at the same spot
+        //Random Initial Positions Chess Pieces with a required additional King at the same spot
         int[] randomWeights = new int[]{8,2,2,2,1};
         HashMap<Integer, Object> chessPieces = new HashMap<Integer, Object>();
         chessPieces.put(1, "Pawn");
@@ -138,8 +138,8 @@ public class Main {
         chessPieces.put(4, "Bishop");
         chessPieces.put(5, "Queen");
         TestProbability tpChess = new TestProbability(1,5, randomWeights, chessPieces);
-        System.out.println("Random pieces to be placed on chess board.");
         System.out.println("Example 16");
+        System.out.println("Random pieces to be placed on chess board.");
         tpChess.PrintValues(15);
 
 
@@ -153,6 +153,20 @@ public class Main {
         TestProbability tpFlip = new TestProbability(1,2, weights, random);
         System.out.println("Example 17");
         tpFlip.PrintValues(20);
+        System.out.println("Example 18");
+        //Hitter in Baseball
+        //HR, 3B, 2B, 1B, walks, strikeouts
+        int[] hittingPlayerOne = new int[]{1, 3, 4, 9, 9, 20};
+        HashMap<Integer, Object> outcomes = new HashMap<Integer, Object>();
+        outcomes.put(1, "HR");
+        outcomes.put(2, "3B");
+        outcomes.put(3, "2B");
+        outcomes.put(4, "1B");
+        outcomes.put(5, "Walk");
+        outcomes.put(6, "Strikeout");
+        TestProbability tpBatter = new TestProbability(1, 6, hittingPlayerOne, outcomes, "Baseball");
+        //10 At Bats
+        tpBatter.PrintValues(10);
 
 
 
