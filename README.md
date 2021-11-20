@@ -16,6 +16,9 @@ Gamify distributions with some numbers or values(in a key/value pair) being more
 
 Map objects to numbers.
 
+Form lists of distributions as if the weight array is DNA for something that is described by
+each list at different instants of time.
+
 ## Machine Learning ##
 Random and automated distributions based on designed weights.
 
