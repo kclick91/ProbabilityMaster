@@ -1,27 +1,28 @@
 # ProbabilityMaster
-Random Number Generator with Weights/Non-Uniform Random Number Generator
+***Random Number Generator with Weights/Non-Uniform Random Number Generator***
 
-Choose the minimum,maximum, and weights of the numbers from the minimum through the maximum.
-Also, choose how many numbers are printed out to test random distributions.
-Print out the weights for each number.
+1. Choose the minimum,maximum, and weights of the numbers from the minimum through the maximum.
+2. Also, choose how many numbers are printed out to test random distributions.
+3. Print out the weights for each number.
+4. Feed counts straight into the weight array.
 
 ## Applications ##
-Generating a training set of events based on the probability of the events occurring.(Used for preparation to handle a set of events)
+1. Generating a training set of events based on the probability of the events occurring.(Used for preparation to handle a set of events)
 
-Map an event to a number such as 1 is mapped to a specific weather event.
+2. Map an event to a number such as 1 is mapped to a specific weather event.
 
-Map a decision to a number with certain decisions having greater weight than others.
+3. Map a decision to a number with certain decisions having greater weight than others.
 
-Gamify distributions with some numbers or values(in a key/value pair) being more rare.
+4. Gamify distributions with some numbers or values(in a key/value pair) being more rare.
 
-Map objects to numbers.
+5. Map objects to numbers.
 
-Form lists of distributions as if the weight array is DNA for something that is described by
+6. Form lists of distributions as if the weight array is DNA for something that is described by
 each list at different instants of time.
 
 ## Machine Learning ##
-Random and automated distributions based on designed weights.
+1. Random and automated distributions based on designed weights.
 
-Used for predictable weights/probabilities but unpredictable specific examples.
+2. Used for predictable weights/probabilities but unpredictable specific examples.
 
-One distribution run is for one generated example.
+3. One distribution run is for one generated example.
