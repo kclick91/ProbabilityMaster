@@ -39,27 +39,34 @@ public class Main {
         //Numbers closest to 500 have the greatest weight
         TestProbability tpFive = new TestProbability(1, 1000, prFive, "TP Five");
 
+        System.out.println("Example 1");
         tp.PrintValues(3);
         tp.PrintWeight();
 
         System.out.println();
 
+        System.out.println("Example 2");
         tpTwo.PrintValues(3);
         tpTwo.PrintWeight();
 
         System.out.println();
 
+        System.out.println("Example 3");
         tpThree.PrintValues(4);
         tpThree.PrintWeight();
 
         System.out.println();
 
+        System.out.println("Example 4");
         tpFour.PrintValues(5);
         tpFour.PrintWeight();
         System.out.println();
+        System.out.println("Example 5");
         tpFour.PrintValues(20);
+        System.out.println("Example 6");
         tpFour.PrintValues(20);
 
+        System.out.println("Example 7");
         tpFive.PrintWeight();
         tpFive.PrintValues(10);
 
@@ -68,6 +75,7 @@ public class Main {
         mapIS.put(2, "Second");
         mapIS.put(3, "Third");
         TestProbability tpSix = new TestProbability(1,3,prTwo, mapIS);
+        System.out.println("Example 8");
         tpSix.PrintValues(3);
         //Sample game with two players and each with a randomized hand of 10 and a max of attack capability 5
         HashMap<Integer, Object> gameMap = new HashMap<Integer, Object>();
@@ -80,9 +88,11 @@ public class Main {
         TestProbability playerOne = new TestProbability(1, 5, attackWeights, gameMap);
         TestProbability playerTwo = new TestProbability(1, 5, attackWeights, gameMap);
         System.out.println();
+        System.out.println("Example 9");
         System.out.println("Sample game with two players and each with a randomized hand of 10 and a max of attack capability 5: ");
         System.out.println("First Player Hand");
         playerOne.PrintValues(10);
+        System.out.println("Example 10");
         System.out.println("Second Player Hand");
         playerTwo.PrintValues(10);
 
@@ -92,7 +102,9 @@ public class Main {
         //ranging from 1 to 10
         TestProbability tpML = new TestProbability(1, 10, weightForTPML);
         System.out.println("2 Examples of Object 1");
+        System.out.println("Example 11");
         tpML.PrintValues(3);
+        System.out.println("Example 12");
         tpML.PrintValues(3);
         System.out.println("FINISHED with 2 examples listed.");
 
@@ -108,6 +120,7 @@ public class Main {
         mapAtmosphere.put(3, "Argon");
         mapAtmosphere.put(4, "Carbon Dioxide");
         TestProbability tpAtmosphere = new TestProbability(1, 4, atmosphereWeights,mapAtmosphere);
+        System.out.println("Example 13,14,15");
         System.out.println("Sample 1: ");
         tpAtmosphere.PrintValues(20);
         System.out.println("Sample 2: ");
@@ -126,6 +139,7 @@ public class Main {
         chessPieces.put(5, "Queen");
         TestProbability tpChess = new TestProbability(1,5, randomWeights, chessPieces);
         System.out.println("Random pieces to be placed on chess board.");
+        System.out.println("Example 16");
         tpChess.PrintValues(15);
 
 
@@ -137,6 +151,7 @@ public class Main {
         int[] weights = new int[]{4,1};
 
         TestProbability tpFlip = new TestProbability(1,2, weights, random);
+        System.out.println("Example 17");
         tpFlip.PrintValues(20);
 
 
