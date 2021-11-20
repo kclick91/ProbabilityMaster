@@ -7,12 +7,20 @@ public class TestProbability {
     private int max;
     private int[] probabilities;//decided by an integer Weight
     private HashMap<Integer, Object> mapValues = new HashMap<>();//the values
+    private String name;
 
     public TestProbability(int mn, int mx, int[] probs)
     {
         min = mn;
         max = mx;
         probabilities = probs;
+    }
+    public TestProbability(int mn, int mx, int[] probs,String nm)
+    {
+        min = mn;
+        max = mx;
+        probabilities = probs;
+        name = nm;
     }
 
     public TestProbability(int mn, int mx, int[] probs, HashMap<Integer, Object> hm)
@@ -23,6 +31,16 @@ public class TestProbability {
         mapValues = hm;
 
     }
+
+    public TestProbability(int mn, int mx, int[] probs, HashMap<Integer, Object> hm, String nm)
+    {
+        min = mn;
+        max = mx;
+        probabilities = probs;
+        mapValues = hm;
+        name = nm;
+    }
+
     public void PrintWeight()
     {
         for (int i = 0; i < probabilities.length;i++)
@@ -33,7 +51,7 @@ public class TestProbability {
     //return returnedCount values
     public void PrintValues(int returnedCount)
     {
-        System.out.println("Random numbers with different weights: ");
+        System.out.println("Random numbers with different weights for " + name + ": ");
         int finalNumber = 0;
         int[] count = new int[returnedCount];
         int j = 0;

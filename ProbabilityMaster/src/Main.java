@@ -31,29 +31,38 @@ public class Main {
 
         }
         //Parameters are minimum, maximum, and weights
-        TestProbability tp = new TestProbability(1,3,pr);
-        TestProbability tpTwo = new TestProbability(1,3,prTwo);
-        TestProbability tpThree = new TestProbability(1,5,prThree);
+        TestProbability tp = new TestProbability(1,3,pr, "TP");
+        TestProbability tpTwo = new TestProbability(1,3,prTwo, "TP Two");
+        TestProbability tpThree = new TestProbability(1,5,prThree, "TP Three");
         //Numbers closer to 1000 have greater weight
-        TestProbability tpFour = new TestProbability(1, 1000, prFour);
+        TestProbability tpFour = new TestProbability(1, 1000, prFour, "TP Four");
         //Numbers closest to 500 have the greatest weight
-        TestProbability tpFive = new TestProbability(1, 1000, prFive);
+        TestProbability tpFive = new TestProbability(1, 1000, prFive, "TP Five");
+
         tp.PrintValues(3);
         tp.PrintWeight();
+
         System.out.println();
+
         tpTwo.PrintValues(3);
         tpTwo.PrintWeight();
+
         System.out.println();
+
         tpThree.PrintValues(4);
         tpThree.PrintWeight();
+
         System.out.println();
+
         tpFour.PrintValues(5);
         tpFour.PrintWeight();
         System.out.println();
         tpFour.PrintValues(20);
         tpFour.PrintValues(20);
+
         tpFive.PrintWeight();
         tpFive.PrintValues(10);
+
         HashMap<Integer, Object> mapIS = new HashMap<Integer, Object>();
         mapIS.put(1, "First");
         mapIS.put(2, "Second");
@@ -128,6 +137,8 @@ public class Main {
 
         TestProbability tpFlip = new TestProbability(1,2, weights, random);
         tpFlip.PrintValues(20);
+
+
 
 
 
