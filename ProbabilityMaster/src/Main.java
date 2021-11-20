@@ -167,6 +167,18 @@ public class Main {
         TestProbability tpBatter = new TestProbability(1, 6, hittingPlayerOne, outcomes, "Baseball");
         //10 At Bats
         tpBatter.PrintValues(10);
+        //Randomized problems/challenges
+        System.out.println("Example 19");
+        int[] difficulty = new int[]{1,3,1};
+        HashMap<Integer,Object> diffMap = new HashMap<Integer, Object>();
+        diffMap.put(1, "Easy");
+        diffMap.put(2, "Medium");
+        diffMap.put(3, "Hard");
+        TestProbability tpDifficulty = new TestProbability(1,3,difficulty, diffMap);
+        //10 problems
+        tpDifficulty.PrintValues(10);
+
+
 
 
 
