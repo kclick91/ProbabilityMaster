@@ -178,6 +178,23 @@ public class Main {
         //10 problems
         tpDifficulty.PrintValues(10);
 
+        //DNA-like weights
+        System.out.println("Example 20(Focused on One at a Time)");
+        int[] fivePersonality = new int[]{4,7,8,7,8};
+        HashMap<Integer, Object> personalities = new HashMap<>();
+        personalities.put(1, "Openness to Experience");
+        personalities.put(2, "Conscientiousness");
+        personalities.put(3, "Extraversion");
+        personalities.put(4, "Agreeableness");
+        personalities.put(5, "Neuroticism");
+        TestProbability tpPersonalities = new TestProbability(1, 5, fivePersonality, personalities);
+        //This shows a sample of how much of each one is shown at an instant
+        //So, add up each instance Ex. There are 5 instances of Conscientiousness exhibited
+        System.out.println("Day 1");
+        tpPersonalities.PrintValues(20);
+        System.out.println("Day 20(19 days later)");
+        tpPersonalities.PrintValues(20);
+
 
 
 
