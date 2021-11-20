@@ -97,6 +97,7 @@ public class Main {
         System.out.println("FINISHED with 2 examples listed.");
 
 
+
         //Atmosphere Composition of Earth//
         int[] atmosphereWeights = new int[]{7808, 2095, 93, 4};
 
@@ -137,6 +138,7 @@ public class Main {
 
         TestProbability tpFlip = new TestProbability(1,2, weights, random);
         tpFlip.PrintValues(20);
+
 
 
 
