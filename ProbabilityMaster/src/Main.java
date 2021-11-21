@@ -39,34 +39,34 @@ public class Main {
         //Numbers closest to 500 have the greatest weight
         TestProbability tpFive = new TestProbability(1, 1000, prFive, "TP Five");
 
-        System.out.println("Example 1");
+        System.out.println("EXAMPLE 1");
         tp.PrintValues(3);
         tp.PrintWeight();
 
         System.out.println();
 
-        System.out.println("Example 2");
+        System.out.println("EXAMPLE 2");
         tpTwo.PrintValues(3);
         tpTwo.PrintWeight();
 
         System.out.println();
 
-        System.out.println("Example 3");
+        System.out.println("EXAMPLE 3");
         tpThree.PrintValues(4);
         tpThree.PrintWeight();
 
         System.out.println();
 
-        System.out.println("Example 4");
+        System.out.println("EXAMPLE 4");
         tpFour.PrintValues(5);
         tpFour.PrintWeight();
         System.out.println();
-        System.out.println("Example 5");
+        System.out.println("EXAMPLE 5");
         tpFour.PrintValues(20);
-        System.out.println("Example 6");
+        System.out.println("EXAMPLE 6");
         tpFour.PrintValues(20);
 
-        System.out.println("Example 7");
+        System.out.println("EXAMPLE 7");
         tpFive.PrintWeight();
         tpFive.PrintValues(10);
 
@@ -75,7 +75,7 @@ public class Main {
         mapIS.put(2, "Second");
         mapIS.put(3, "Third");
         TestProbability tpSix = new TestProbability(1,3,prTwo, mapIS);
-        System.out.println("Example 8");
+        System.out.println("EXAMPLE 8");
         tpSix.PrintValues(3);
         //Sample game with two players and each with a randomized hand of 10 and a max of attack capability 5
         HashMap<Integer, Object> gameMap = new HashMap<Integer, Object>();
@@ -88,11 +88,11 @@ public class Main {
         TestProbability playerOne = new TestProbability(1, 5, attackWeights, gameMap);
         TestProbability playerTwo = new TestProbability(1, 5, attackWeights, gameMap);
         System.out.println();
-        System.out.println("Example 9");
+        System.out.println("EXAMPLE 9");
         System.out.println("Sample game with two players and each with a randomized hand of 10 and a max of attack capability 5: ");
         System.out.println("First Player Hand");
         playerOne.PrintValues(10);
-        System.out.println("Example 10");
+        System.out.println("EXAMPLE 10");
         System.out.println("Second Player Hand");
         playerTwo.PrintValues(10);
 
@@ -102,9 +102,9 @@ public class Main {
         //ranging from 1 to 10
         TestProbability tpML = new TestProbability(1, 10, weightForTPML);
         System.out.println("2 Examples of Object 1");
-        System.out.println("Example 11");
+        System.out.println("EXAMPLE 11");
         tpML.PrintValues(3);
-        System.out.println("Example 12");
+        System.out.println("EXAMPLE 12");
         tpML.PrintValues(3);
         System.out.println("FINISHED with 2 examples listed.");
 
@@ -120,7 +120,7 @@ public class Main {
         mapAtmosphere.put(3, "Argon");
         mapAtmosphere.put(4, "Carbon Dioxide");
         TestProbability tpAtmosphere = new TestProbability(1, 4, atmosphereWeights,mapAtmosphere);
-        System.out.println("Example 13,14,15");
+        System.out.println("EXAMPLES 13,14,15");
         System.out.println("Sample 1: ");
         tpAtmosphere.PrintValues(20);
         System.out.println("Sample 2: ");
@@ -151,9 +151,9 @@ public class Main {
         int[] weights = new int[]{4,1};
         TestProbability tpFlip = new TestProbability(1,2, weights, random);
 
-        System.out.println("Example 17");
+        System.out.println("EXAMPLE 17");
         tpFlip.PrintValues(20);
-        System.out.println("Example 18");
+        System.out.println("EXAMPLE 18");
         //Hitter in Baseball
         //HR, 3B, 2B, 1B, walks, strikeouts
         int[] hittingPlayerOne = new int[]{1, 3, 4, 9, 9, 20};
@@ -168,7 +168,7 @@ public class Main {
         //10 At Bats
         tpBatter.PrintValues(10);
         //Randomized problems/challenges
-        System.out.println("Example 19");
+        System.out.println("EXAMPLE 19");
         int[] difficulty = new int[]{1,3,1};
         HashMap<Integer,Object> diffMap = new HashMap<Integer, Object>();
         diffMap.put(1, "Easy");
@@ -179,7 +179,7 @@ public class Main {
         tpDifficulty.PrintValues(10);
 
         //DNA-like weights
-        System.out.println("Example 20(Focused on One at a Time)");
+        System.out.println("EXAMPLE 20(Focused on One at a Time)");
         int[] fivePersonality = new int[]{4,7,8,7,8};
         HashMap<Integer, Object> personalities = new HashMap<>();
         personalities.put(1, "Openness to Experience");
@@ -194,7 +194,7 @@ public class Main {
         tpPersonalities.PrintValues(20);
         System.out.println("Day 20(19 days later)");
         tpPersonalities.PrintValues(20);
-
+        System.out.println("EXAMPLE 21");
         TPPack tpp = new TPPack();
         tpp.AddTP(tp);
         tpp.AddTP(tpAtmosphere);
@@ -214,6 +214,7 @@ public class Main {
         tpp.GetTP().get(0).PrintValues(5);
         tpp.GetTP().get(3).PrintValues(5);
 
+        System.out.println("EXAMPLE 22");
         int[] decisionSet1 = new int[]{3,5,3};
         HashMap<Integer, Object> hashMap = new HashMap<>();
 
