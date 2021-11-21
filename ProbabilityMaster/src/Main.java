@@ -149,8 +149,8 @@ public class Main {
         random.put(1, so.Print());//Object should replace String
         random.put(2, st.Print());//Object should replace String
         int[] weights = new int[]{4,1};
-
         TestProbability tpFlip = new TestProbability(1,2, weights, random);
+
         System.out.println("Example 17");
         tpFlip.PrintValues(20);
         System.out.println("Example 18");
@@ -194,6 +194,27 @@ public class Main {
         tpPersonalities.PrintValues(20);
         System.out.println("Day 20(19 days later)");
         tpPersonalities.PrintValues(20);
+
+        TPPack tpp = new TPPack();
+        tpp.AddTP(tp);
+        tpp.AddTP(tpAtmosphere);
+        tpp.AddTP(tpBatter);
+        tpp.AddTP(tpChess);
+        tpp.AddTP(tpDifficulty);
+        tpp.AddTP(tpFive);
+        tpp.AddTP(tpFlip);
+        tpp.AddTP(tpFlip);
+        tpp.AddTP(tpFour);
+        tpp.AddTP(tpML);
+        tpp.AddTP(tpPersonalities);
+        tpp.AddTP(tpSix);
+        tpp.AddTP(tpThree);
+        tpp.AddTP(tpTwo);
+        tpp.AddTP(tp);
+        tpp.GetTP().get(0).PrintValues(5);
+        tpp.GetTP().get(3).PrintValues(5);
+
+
 
 
 

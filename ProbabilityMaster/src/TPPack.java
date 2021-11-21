@@ -1,13 +1,14 @@
 import org.bouncycastle.util.test.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TPPack {
-    private List<TestProbability> tpPackList;
+    private ArrayList<TestProbability> tpPackList;
 
     public TPPack()
     {
-
+        tpPackList = new ArrayList<TestProbability>();
     }
 
     public void AddTP(TestProbability tp)
