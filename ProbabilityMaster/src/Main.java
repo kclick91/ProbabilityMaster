@@ -214,6 +214,28 @@ public class Main {
         tpp.GetTP().get(0).PrintValues(5);
         tpp.GetTP().get(3).PrintValues(5);
 
+        int[] decisionSet1 = new int[]{3,5,3};
+        HashMap<Integer, Object> hashMap = new HashMap<>();
+
+        hashMap.put(1, "Decision A");
+        hashMap.put(2, "Decision B");
+        hashMap.put(3, "Decision C");
+
+
+        int[] decisionSet2 = new int[]{2,3,2};
+        HashMap<Integer, Object> hashMapTwo = new HashMap<>();
+
+        hashMapTwo.put(1, "Decision 1");
+        hashMapTwo.put(2, "Decision 2");
+        hashMapTwo.put(3, "Decision 3");
+        TestProbability tpDecOne = new TestProbability(1, 3, decisionSet1, hashMap, "First Decision");
+        TestProbability tpDecTwo = new TestProbability(1, 3, decisionSet2, hashMapTwo, "Second Decision");
+
+        TPPack tppTwo = new TPPack();
+        tppTwo.AddTP(tpDecOne);
+        tppTwo.AddTP(tpDecTwo);
+        tppTwo.GetTP().get(0).PrintValues(1);
+        tppTwo.GetTP().get(1).PrintValues(1);
 
 
 
