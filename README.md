@@ -11,7 +11,7 @@
 
 2. Map an event to a number such as 1 is mapped to a specific weather event.
 
-3. Map a decision to a number with certain decisions having greater weight than others.
+3. Map a decision(Financial/Learning/Exercise/etc.) to a number with certain decisions having greater weight than others.
 
 4. Gamify distributions with some numbers or values(in a key/value pair) being more rare.
 
