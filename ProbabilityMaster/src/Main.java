@@ -6,6 +6,14 @@ import java.util.Random;
 
 public class Main {
 
+
+    public static int[] Pay(int payerTotal, int recipientTotal, int amount)
+    {
+        payerTotal = payerTotal - amount;
+        recipientTotal = recipientTotal + amount;
+
+        return new int[]{payerTotal, recipientTotal};
+    }
     public static void main(String[] args)
     {
         System.out.println("WELCOME TO A NON-UNIFORM RANDOM NUMBER GENERATOR: ");
@@ -238,6 +246,29 @@ public class Main {
         tppTwo.GetTP().get(0).PrintValues(1);
         tppTwo.GetTP().get(1).PrintValues(1);
 
+        int count = 15;
+        int countTwo = 5;
+        int countThree = 10;
+        int[] weightsPay = new int[]{5,6,5,2,9,9};
+        //simulate economic activity
+        //count --> countTwo
+        //countTwo --> countThree
+        //countThree --> count
+        //count --> countThree
+        //countThree --> countTwo
+        //countTwo --> count
+        //int[] afterPayment = Pay(count, countTwo, 7);
+        //count = afterPayment[0];
+        //countTwo = afterPayment[1];
+        HashMap hmPayments = new HashMap<>();
+        hmPayments.put(1, "Account One pays Two");
+        hmPayments.put(2, "Account Two pays Three");
+        hmPayments.put(3, "Account Three pays One");
+        hmPayments.put(4, "Account One pays Three");
+        hmPayments.put(5, "Account Three pays Two");
+        hmPayments.put(6, "Account Two pays One");
+        TestProbability tpPay = new TestProbability(1, 6, weightsPay, hmPayments, "EconActivitySimulation");
+        tpPay.PrintValues(5);//5 transactions
 
 
 
