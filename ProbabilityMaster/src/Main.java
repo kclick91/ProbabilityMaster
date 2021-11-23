@@ -283,8 +283,9 @@ public class Main {
         //Stages decided at random
         tpStages.PrintValues(20);
         //Adjust weights
-        int[] weightStagesTwo = new int[]{2,2,7,1,0};
+        int[] weightStagesTwo = new int[]{2,2,6,1,1,0};
         TestProbability tpStages2 = new TestProbability(1,6,weightStagesTwo, hmStages, "PROJECT");
+        tpStages2.PrintValues(20);
 
 
 
