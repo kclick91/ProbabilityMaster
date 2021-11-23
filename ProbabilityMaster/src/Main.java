@@ -271,6 +271,7 @@ public class Main {
         tpPay.PrintValues(5);//5 transactions
 
         //Different stages of development of a project
+        System.out.println("EXAMPLE 22");
         HashMap hmStages = new HashMap<>();
         hmStages.put(1, "Plan");
         hmStages.put(2, "Requirements");
@@ -286,6 +287,18 @@ public class Main {
         int[] weightStagesTwo = new int[]{2,2,6,1,1,0};
         TestProbability tpStages2 = new TestProbability(1,6,weightStagesTwo, hmStages, "PROJECT");
         tpStages2.PrintValues(20);
+
+        System.out.println("EXAMPLE 23");
+        //Fiction writing
+        HashMap<Integer, Object> hmWriting = new HashMap<>();
+        int[] weightsWriting = new int[]{2,3,5,5,4};
+        hmWriting.put(1, "Create New City");
+        hmWriting.put(2, "Create New Character");
+        hmWriting.put(3, "Create New Conflict");
+        hmWriting.put(4, "Revise");
+        hmWriting.put(5, "Create New Fictional Technology");
+        TestProbability tpWriting = new TestProbability(1,5, weightsWriting, hmWriting, "Novel");
+        tpWriting.PrintValues(10);
 
 
 
