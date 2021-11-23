@@ -6,6 +6,9 @@
 3. Print out the weights for each number.
 4. Feed counts straight into the weight array.
 
+## Motivation ##
+The motivation for **ProbabilityMaster** was for combining design and randomization && combining control and surprise.
+
 ## Applications ##
 1. Generating a training set of events based on the probability of the events occurring.(Used for preparation to handle a set of events)
 
