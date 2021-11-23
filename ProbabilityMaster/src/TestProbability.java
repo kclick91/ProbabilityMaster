@@ -95,5 +95,17 @@ public class TestProbability {
 
     }
 
+    //Used for redistribution
+    public int[] MoveForward(int i, int j, int amount)
+    {
+        probabilities[i] = probabilities[i] - amount;
+        probabilities[j] = probabilities[j] + amount;
+
+
+        return probabilities;
+    }
+
+
+
 
 }
