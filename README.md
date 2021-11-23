@@ -20,6 +20,8 @@
 6. Form lists of distributions as if the weight array is DNA for something that is described by
 each list at different instants of time.
 
+7. Distribute focus on different areas, stages, tasks etc. of a project
+
 ## Machine Learning ##
 1. Random and automated distributions based on designed weights.
 
