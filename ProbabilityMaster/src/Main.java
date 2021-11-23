@@ -270,6 +270,27 @@ public class Main {
         TestProbability tpPay = new TestProbability(1, 6, weightsPay, hmPayments, "EconActivitySimulation");
         tpPay.PrintValues(5);//5 transactions
 
+        //Different stages of development of a project
+        HashMap hmStages = new HashMap<>();
+        hmStages.put(1, "Plan");
+        hmStages.put(2, "Requirements");
+        hmStages.put(3, "Design");
+        hmStages.put(4, "Implementation");
+        hmStages.put(5, "Test");
+        hmStages.put(6, "Maintenance");
+        int[] weightStages = new int[]{5,3,2,1,1,0};
+        TestProbability tpStages = new TestProbability(1,6,weightStages, hmStages, "PROJECT");
+        //Stages decided at random
+        tpStages.PrintValues(20);
+        //Adjust weights
+        int[] weightStagesTwo = new int[]{2,2,7,1,0};
+        TestProbability tpStages2 = new TestProbability(1,6,weightStagesTwo, hmStages, "PROJECT");
+
+
+
+
+
+
 
 
 
