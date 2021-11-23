@@ -104,16 +104,17 @@ public class TestProbability {
 
         return probabilities;
     }
-    public int[] MoveWeights(int i, int[] j, int amount)
-    {
+    public int[] MoveWeights(int i, int[] j, int amount) {
         probabilities[i] = probabilities[i] - amount;
-        for (int p = 0; p < j.length; p++)
-        {
+        for (int p = 0; p < j.length; p++) {
             probabilities[p] = probabilities[p] + j[p];
         }
         return probabilities;
     }
-
+    public void SetWeights(int[] probs)
+    {
+        probabilities = probs;
+    }
 
 
 
