@@ -31,3 +31,6 @@ each list at different instants of time.
 2. Used for predictable weights/probabilities but unpredictable specific examples.
 
 3. One distribution run is for one generated example.
+
+## BONUS ##
+The rareness of the exact combination of the 23 printed examples.
