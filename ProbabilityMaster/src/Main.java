@@ -49,25 +49,25 @@ public class Main {
 
         System.out.println("EXAMPLE 1");
         tp.PrintValues(3);
-        tp.PrintWeight();
+        //tp.PrintWeight();
 
         System.out.println();
 
         System.out.println("EXAMPLE 2");
         tpTwo.PrintValues(3);
-        tpTwo.PrintWeight();
+        //tpTwo.PrintWeight();
 
         System.out.println();
 
         System.out.println("EXAMPLE 3");
         tpThree.PrintValues(4);
-        tpThree.PrintWeight();
+        //tpThree.PrintWeight();
 
         System.out.println();
 
         System.out.println("EXAMPLE 4");
         tpFour.PrintValues(5);
-        tpFour.PrintWeight();
+        //tpFour.PrintWeight();
         System.out.println();
         System.out.println("EXAMPLE 5");
         tpFour.PrintValues(20);
@@ -75,7 +75,7 @@ public class Main {
         tpFour.PrintValues(20);
 
         System.out.println("EXAMPLE 7");
-        tpFive.PrintWeight();
+        //tpFive.PrintWeight();
         tpFive.PrintValues(10);
 
         HashMap<Integer, Object> mapIS = new HashMap<Integer, Object>();
@@ -135,7 +135,7 @@ public class Main {
         tpAtmosphere.PrintValues(20);
         System.out.println("Sample 3: ");
         tpAtmosphere.PrintValues(20);
-        tpAtmosphere.PrintWeight();
+        //tpAtmosphere.PrintWeight();
 
         //Random Initial Positions Chess Pieces with a required additional King at the same spot
         int[] randomWeights = new int[]{8,2,2,2,1};
@@ -154,8 +154,8 @@ public class Main {
         HashMap<Integer, Object> random = new HashMap<Integer, Object>();
         SampleObject so = new SampleObject(1, "Object One");
         SampleObject st = new SampleObject(2, "Object Two");
-        random.put(1, so.Print());//Object should replace String
-        random.put(2, st.Print());//Object should replace String
+        random.put(1, so);
+        random.put(2, st);
         int[] weights = new int[]{4,1};
         TestProbability tpFlip = new TestProbability(1,2, weights, random);
 
