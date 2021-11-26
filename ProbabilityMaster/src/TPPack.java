@@ -21,5 +21,13 @@ public class TPPack {
         return tpPackList;
     }
 
+    public void PrintTPPack(int amount)
+    {
+        for (int j = 0; j < tpPackList.size(); j++)
+        {
+            tpPackList.get(j).PrintValues(amount);
+        }
+    }
+
 
 }
