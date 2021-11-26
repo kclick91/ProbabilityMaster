@@ -1,3 +1,4 @@
+import javax.print.attribute.HashAttributeSet;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -198,14 +199,22 @@ public class Main {
         //Randomized problems/challenges
         System.out.println("EXAMPLE 19");
         System.out.println("==========");
-        int[] difficulty = new int[]{1,3,1};
+        int[] difficultyLevelOne = new int[]{1,3,1};
+        int[] difficultyLevelTwo = new int[]{1,1,3};
+        CreateWeights cwLevelOne = new CreateWeights(3, difficultyLevelOne, "Level One");
+        CreateWeights cwLevelTwo = new CreateWeights(3, difficultyLevelTwo, "Level Two");
+
         HashMap<Integer,Object> diffMap = new HashMap<Integer, Object>();
         diffMap.put(1, "Easy");
         diffMap.put(2, "Medium");
         diffMap.put(3, "Hard");
-        TestProbability tpDifficulty = new TestProbability(1,3,difficulty, diffMap);
+        TestProbability tpDifficulty = new TestProbability(1,3,cwLevelOne.GetWeights(), diffMap);
+        TestProbability tpDifficultyTwo = new TestProbability(1,3,cwLevelTwo.GetWeights(), diffMap);
         //10 problems
+        System.out.println("Level One");
         tpDifficulty.PrintValues(10);
+        System.out.println("Level Two");
+        tpDifficultyTwo.PrintValues(10);
 
         //DNA-like weights
         System.out.println("EXAMPLE 20(Focused on One at a Time)");
