@@ -1,5 +1,3 @@
-import org.bouncycastle.util.test.Test;
-
 import javax.print.attribute.HashAttributeSet;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,6 +16,12 @@ public class Main {
     public static void main(String[] args)
     {
         System.out.println("WELCOME TO A NON-UNIFORM RANDOM NUMBER GENERATOR: ");
+        Examples();
+
+    }
+
+    public static void Examples()
+    {
         int[] pr = new int[]{1,1,1};
         int[] prTwo = new int[]{5,1,1};
         int[] prThree = new int[]{1,2,9,3,4};
@@ -342,25 +346,5 @@ public class Main {
         System.out.print("Example 23 using Example class");
         Example examp = new Example(tpWriting, 5);
         examp.PrintExample();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
 }
