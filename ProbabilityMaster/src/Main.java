@@ -1,3 +1,5 @@
+import org.bouncycastle.util.test.Test;
+
 import javax.print.attribute.HashAttributeSet;
 import java.util.HashMap;
 import java.util.Map;
@@ -335,6 +337,11 @@ public class Main {
         TestProbability tpWriting = new TestProbability(1,5, weightsWriting, hmWriting, "Novel");
         tpWriting.PrintValues(10);
         System.out.println("Total: " + tpWriting.GetTotal());
+
+        //Example 23 using Example class
+        System.out.print("Example 23 using Example class");
+        Example examp = new Example(tpWriting, 5);
+        examp.PrintExample();
 
 
 

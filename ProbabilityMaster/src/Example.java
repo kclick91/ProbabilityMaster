@@ -1,5 +1,3 @@
-import org.bouncycastle.util.test.Test;
-
 public class Example {
 
     TestProbability tprob;
