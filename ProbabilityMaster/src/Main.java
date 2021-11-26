@@ -201,8 +201,8 @@ public class Main {
         System.out.println("==========");
         int[] difficultyLevelOne = new int[]{1,3,1};
         int[] difficultyLevelTwo = new int[]{1,1,3};
-        CreateWeights cwLevelOne = new CreateWeights(3, difficultyLevelOne, "Level One");
-        CreateWeights cwLevelTwo = new CreateWeights(3, difficultyLevelTwo, "Level Two");
+        Weights cwLevelOne = new Weights(3, difficultyLevelOne, "Level One");
+        Weights cwLevelTwo = new Weights(3, difficultyLevelTwo, "Level Two");
 
         HashMap<Integer,Object> diffMap = new HashMap<Integer, Object>();
         diffMap.put(1, "Easy");
