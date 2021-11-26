@@ -1,5 +1,3 @@
-import org.bouncycastle.util.test.Test;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -46,35 +44,47 @@ public class Main {
         TestProbability tpFour = new TestProbability(1, 1000, prFour, "TP Four");
         //Numbers closest to 500 have the greatest weight
         TestProbability tpFive = new TestProbability(1, 1000, prFive, "TP Five");
-
+        TPPack tppAll = new TPPack();
         System.out.println("EXAMPLE 1");
+        System.out.println("==========");
+        tppAll.AddTP(tp);
+        tppAll.AddTP(tpTwo);
+        tppAll.AddTP(tpThree);
+        tppAll.AddTP(tpFour);
+        tppAll.AddTP(tpFive);
         tp.PrintValues(3);
         //tp.PrintWeight();
 
         System.out.println();
 
         System.out.println("EXAMPLE 2");
+        System.out.println("==========");
         tpTwo.PrintValues(3);
         //tpTwo.PrintWeight();
 
         System.out.println();
 
         System.out.println("EXAMPLE 3");
+        System.out.println("==========");
         tpThree.PrintValues(4);
         //tpThree.PrintWeight();
 
         System.out.println();
 
         System.out.println("EXAMPLE 4");
+        System.out.println("==========");
         tpFour.PrintValues(5);
         //tpFour.PrintWeight();
         System.out.println();
         System.out.println("EXAMPLE 5");
+        System.out.println("==========");
         tpFour.PrintValues(20);
         System.out.println("EXAMPLE 6");
+        System.out.println("==========");
         tpFour.PrintValues(20);
 
         System.out.println("EXAMPLE 7");
+        System.out.println("==========");
         //tpFive.PrintWeight();
         tpFive.PrintValues(10);
 
@@ -84,7 +94,9 @@ public class Main {
         mapIS.put(3, "Third");
         TestProbability tpSix = new TestProbability(1,3,prTwo, mapIS);
         System.out.println("EXAMPLE 8");
+        System.out.println("==========");
         tpSix.PrintValues(3);
+        tppAll.AddTP(tpSix);
         //Sample game with two players and each with a randomized hand of 10 and a max of attack capability 5
         HashMap<Integer, Object> gameMap = new HashMap<Integer, Object>();
         gameMap.put(1, "Capability One");
@@ -97,10 +109,12 @@ public class Main {
         TestProbability playerTwo = new TestProbability(1, 5, attackWeights, gameMap);
         System.out.println();
         System.out.println("EXAMPLE 9");
+        System.out.println("==========");
         System.out.println("Sample game with two players and each with a randomized hand of 10 and a max of attack capability 5: ");
         System.out.println("First Player Hand");
         playerOne.PrintValues(10);
         System.out.println("EXAMPLE 10");
+        System.out.println("==========");
         System.out.println("Second Player Hand");
         playerTwo.PrintValues(10);
 
@@ -111,8 +125,10 @@ public class Main {
         TestProbability tpML = new TestProbability(1, 10, weightForTPML);
         System.out.println("2 Examples of Object 1");
         System.out.println("EXAMPLE 11");
+        System.out.println("==========");
         tpML.PrintValues(3);
         System.out.println("EXAMPLE 12");
+        System.out.println("==========");
         tpML.PrintValues(3);
         System.out.println("FINISHED with 2 examples listed.");
 
@@ -129,6 +145,7 @@ public class Main {
         mapAtmosphere.put(4, "Carbon Dioxide");
         TestProbability tpAtmosphere = new TestProbability(1, 4, atmosphereWeights,mapAtmosphere);
         System.out.println("EXAMPLES 13,14,15");
+        System.out.println("==========");
         System.out.println("Sample 1: ");
         tpAtmosphere.PrintValues(20);
         System.out.println("Sample 2: ");
@@ -147,6 +164,7 @@ public class Main {
         chessPieces.put(5, "Queen");
         TestProbability tpChess = new TestProbability(1,5, randomWeights, chessPieces);
         System.out.println("Example 16");
+        System.out.println("==========");
         System.out.println("Random pieces to be placed on chess board.");
         tpChess.PrintValues(15);
 
@@ -160,8 +178,10 @@ public class Main {
         TestProbability tpFlip = new TestProbability(1,2, weights, random);
 
         System.out.println("EXAMPLE 17");
+        System.out.println("==========");
         tpFlip.PrintValues(20);
         System.out.println("EXAMPLE 18");
+        System.out.println("==========");
         //Hitter in Baseball
         //HR, 3B, 2B, 1B, walks, strikeouts
         int[] hittingPlayerOne = new int[]{1, 3, 4, 9, 9, 20};
@@ -177,6 +197,7 @@ public class Main {
         tpBatter.PrintValues(10);
         //Randomized problems/challenges
         System.out.println("EXAMPLE 19");
+        System.out.println("==========");
         int[] difficulty = new int[]{1,3,1};
         HashMap<Integer,Object> diffMap = new HashMap<Integer, Object>();
         diffMap.put(1, "Easy");
@@ -188,6 +209,7 @@ public class Main {
 
         //DNA-like weights
         System.out.println("EXAMPLE 20(Focused on One at a Time)");
+        System.out.println("==========");
         int[] fivePersonality = new int[]{4,7,8,7,8};
         HashMap<Integer, Object> personalities = new HashMap<>();
         personalities.put(1, "Openness to Experience");
@@ -203,6 +225,7 @@ public class Main {
         System.out.println("Day 20(19 days later)");
         tpPersonalities.PrintValues(20);
         System.out.println("EXAMPLE 21");
+        System.out.println("==========");
         TPPack tpp = new TPPack();
         tpp.AddTP(tp);
         tpp.AddTP(tpAtmosphere);
@@ -223,6 +246,7 @@ public class Main {
         tpp.GetTP().get(3).PrintValues(5);
 
         System.out.println("EXAMPLE 22");
+        System.out.println("==========");
         int[] decisionSet1 = new int[]{3,5,3};
         HashMap<Integer, Object> hashMap = new HashMap<>();
 
@@ -272,6 +296,7 @@ public class Main {
 
         //Different stages of development of a project
         System.out.println("EXAMPLE 22");
+        System.out.println("==========");
         HashMap hmStages = new HashMap<>();
         hmStages.put(1, "Plan");
         hmStages.put(2, "Requirements");
@@ -289,6 +314,7 @@ public class Main {
         tpStages2.PrintValues(20);
 
         System.out.println("EXAMPLE 23");
+        System.out.println("==========");
         //Fiction writing
         HashMap<Integer, Object> hmWriting = new HashMap<>();
         int[] weightsWriting = new int[]{2,3,5,5,4};
@@ -299,6 +325,12 @@ public class Main {
         hmWriting.put(5, "Create New Fictional Technology");
         TestProbability tpWriting = new TestProbability(1,5, weightsWriting, hmWriting, "Novel");
         tpWriting.PrintValues(10);
+        System.out.println("Total: " + tpWriting.GetTotal());
+
+
+
+
+
 
 
 

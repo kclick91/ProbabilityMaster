@@ -115,6 +115,16 @@ public class TestProbability {
     {
         probabilities = probs;
     }
+    public int GetTotal()
+    {
+        int Sum = 0;
+        for (int i = 0; i < probabilities.length; i++)
+        {
+            Sum = Sum + probabilities[i];
+
+        }
+        return Sum;
+    }
 
 
 
